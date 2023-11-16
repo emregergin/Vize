@@ -2,5 +2,4 @@ url <- "https://raw.githubusercontent.com/scizmeli/Red/master/MapsThatChangedOur
 file_name <- "MapsThatChangedOurWorld_StoryMap_Data.csv"
 download.file(url, destfile = file_name, mode = "wb")
 
-
-
+maps <- read.csv(file_name, header = TRUE,sep = ";")
